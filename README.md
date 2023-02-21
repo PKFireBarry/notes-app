@@ -14,7 +14,6 @@ This is a simple web app built with React and Tailwind CSS that allows users to 
 ## How to Use
 - The main page displays all existing notes and a search bar to filter the notes.
 - To create a new note, click on the "New Note" button, enter a note text (between 20 and 300 characters), and click "Save".
-- To update an existing note, click on the note you want to update and edit the text in the note form that appears. Then click on "Update" to save your changes.
 - To delete a note, click on the delete button located at the bottom of each note card.
 - To search for a note, type in a keyword or phrase in the search bar and press enter. The search will filter notes based on their content.
 ## Features
