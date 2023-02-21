@@ -8,7 +8,7 @@ import Header from './components/Header';
 function App() {
 
   return (
-    <div className=" bg-slate-700 min-h-screen mx-auto pl-5 pr-5" style={{width: "100vw"}}>
+    <div className=" bg-slate-700 min-h-screen mx-auto" style={{width: "100vw"}}>
       <Header />
       <NoteForm />
       <Search />
