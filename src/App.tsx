@@ -7,9 +7,10 @@ import Search from "./components/Search";
 function App() {
 
   return (
-    <div className="container mx-auto py-4">
-      <NoteForm />
+    <div className="container mx-auto py-4 ">
       <Search />
+      <NoteForm />
+
       <NoteList />
     </div>
   );

@@ -23,7 +23,7 @@ function NoteForm() {
       date: new Date(),
     });
     setContent("");
-    console.log("Document written with ID: ", docRef.id);
+    console.log("Document written with ID: ", docRef.id,"Content:", content);
   };
   
 
@@ -39,15 +39,15 @@ function NoteForm() {
         <label htmlFor="content" className="mr-2">
           Sticky Note:
         </label>
+      </div>
         <input
           type="text"
           id="content"
           name="content"
           value={content}
           onChange={handleChange}
-          className="border rounded-lg h-[200px] w-[200px] px-2 py-1"
+          className="border rounded-lg px-2 py-1"
         />
-      </div>
       <button type="submit" disabled={!content} className="bg-blue-500 text-white px-4 py-2 rounded">
         Save
       </button>
