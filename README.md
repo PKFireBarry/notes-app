@@ -21,9 +21,9 @@ This is a simple web app built with React and Tailwind CSS that allows users to 
 - Notes are saved in a Firebase database
 - Search functionality allows for easy retrieval of notes
 ## Technologies Used
-React.js
-Tailwind CSS
-Firebase
+- React.js
+- Tailwind CSS
+- Firebase
 ## Future Improvements
 Implement user authentication to enable secure access to notes
 Add a character count validation to the note form for better user experience
