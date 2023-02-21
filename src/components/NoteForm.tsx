@@ -18,6 +18,7 @@ function NoteForm() {
       return;
     }
     const docRef = await addDoc(collection(firestore, "notes"), {
+      id: Date.now(),
       note: content,
       date: new Date(),
     });
