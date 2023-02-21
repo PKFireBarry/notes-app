@@ -11,7 +11,7 @@ function Search() {
     if (term) {
       const q = query(collection(firestore, 'notes'), where('note', '>=', term), where('note', '<=', term + '\uf8ff'));
       const querySnapshot = await getDocs(q);
-      const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      var data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setResults(data);
     } else {
       setResults([]);
@@ -34,6 +34,10 @@ function Search() {
   <div className="flex items-center mb-2">
     <label htmlFor="content" className="mr-2">
       Search Notes:
+      {/*say that search is case sensitive*/}
+      <p>
+        <small className="text-gray-500">Search is case sensitive</small>
+      </p>
     </label>
   </div>
   <input
