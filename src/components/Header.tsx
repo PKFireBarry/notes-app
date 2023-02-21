@@ -8,7 +8,7 @@ function Header() {
       className='text-2xl font-bold rounded-t-lg pt-2 text-center'
       >
         <a
-        className='hover:border-blue-700 hover:animate-pulse text-black'
+        className='hover:text-blue-700 hover:animate-pulse hover:animate-bounce text-black'
         href='https://github.com/PKFireBarry/notes-app'
         >Github</a>
       </h1>
