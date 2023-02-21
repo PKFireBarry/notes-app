@@ -2,11 +2,12 @@
 This is a simple web app built with React and Tailwind CSS that allows users to create, update, delete, and search notes. Below is a brief documentation of the app and how to use it.
 
 ## Local Setup
--Clone or fork the repository onto your computer
--Download and install the latest version of Node.js (https://nodejs.org/en/) for your Operating System
--Using your command line, navigate to the folder where the files are saved
--Run npm i to install all the dependencies
--Next, run npm run start to start the app on localhost:3000
+1. clone or fork the repo onto your computer
+2. download and install the latest version of node.js (https://nodejs.org/en/) for your Operating System
+3. using your Command Line navigate to the folder where the files are saved
+4. run 'npm i' to install all the dependencies
+5. next run 'npm run dev' to start the server on localhost:3000
+
 ## How to Use
 -The main page displays all existing notes and a search bar to filter the notes.
 -To create a new note, click on the "New Note" button, enter a note text (between 20 and 300 characters), and click "Save".
