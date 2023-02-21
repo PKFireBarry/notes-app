@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Sticky Notes App
+This is a simple web app built with React and Tailwind CSS that allows users to create, update, delete, and search notes. Below is a brief documentation of the app and how to use it.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Local Setup
+1. clone or fork the repo onto your computer
+2. download and install the latest version of node.js (https://nodejs.org/en/) for your Operating System
+3. using your Command Line navigate to the folder where the files are saved
+4. run 'npm i' to install all the dependencies
+5. next run 'npm run dev' to start the server on localhost:3000
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How to Use
+-The main page displays all existing notes and a search bar to filter the notes.
+-To create a new note, click on the "New Note" button, enter a note text (between 20 and 300 characters), and click "Save".
+-To update an existing note, click on the note you want to update and edit the text in the note form that appears. Then click on "Update" to save your changes.
+-To delete a note, click on the delete button located at the bottom of each note card.
+-To search for a note, type in a keyword or phrase in the search bar and press enter. The search will filter notes based on their content.
+## Features
+-Notes can be created, updated, and deleted
+-Notes are saved in a Firebase database
+-Search functionality allows for easy retrieval of notes
+## Technologies Used
+React.js
+Tailwind CSS
+Firebase
+## Future Improvements
+Implement user authentication to enable secure access to notes
+Add a character count validation to the note form for better user experience
+Improve search functionality with more advanced filtering options
+We hope you find this simple notes app useful! If you have any questions or feedback, please do not hesitate to reach out.
