@@ -1,3 +1,6 @@
+
+https://a-sticky-notes-app.vercel.app/
+
 # Sticky Notes App
 This is a simple web app built with React and Tailwind CSS that allows users to create, update, delete, and search notes. Below is a brief documentation of the app and how to use it.
 
