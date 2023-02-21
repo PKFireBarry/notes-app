@@ -25,7 +25,7 @@ This is a simple web app built with React and Tailwind CSS that allows users to 
 - Tailwind CSS
 - Firebase
 ## Future Improvements
-Implement user authentication to enable secure access to notes
+- Implement user authentication to enable secure access to notes
 - Add a character count validation to the note form for better user experience
 - Improve search functionality with more advanced filtering options
 - We hope you find this simple notes app useful! If you have any questions or feedback, please do not hesitate to reach out.
