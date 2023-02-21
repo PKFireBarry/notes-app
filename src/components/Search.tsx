@@ -26,37 +26,40 @@ function Search() {
     setSearchTerm(e.target.value);
   }
 
+
+
   return (
-    <div>
-      <form onSubmit={(e) => { e.preventDefault(); searchNotes(searchTerm) }} className="mb-4">
-        <div className="flex items-center mb-2">
-          <label htmlFor="content" className="mr-2">
-            Search Notes:
-          </label>
-        </div>
-          <input
-            type="text"
-            id="content"
-            name="content"
-            value={searchTerm}
-            onChange={handleChange}
-            className="border rounded-lg px-2 py-1"
-          />
-          <button type="submit" disabled={!searchTerm} className="bg-blue-500 text-white px-4 py-2 rounded">
-            Search
-          </button>
-      </form>
-      {results.length > 0 && (
-        <div>
-          <div className='font-base text-black'>
-            {results.map((result: { id: React.Key | null | undefined; note: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; }) => (
-              <div key={result.id}>
-                <p>{result.note}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+    <div className='bg-yellow-200 border-b-4 border-yellow-300 rounded-md p-4 mt-4'>
+<form onSubmit={(e) => { e.preventDefault(); searchNotes(searchTerm) }} className="mb-4">
+  <div className="flex items-center mb-2">
+    <label htmlFor="content" className="mr-2">
+      Search Notes:
+    </label>
+  </div>
+  <input
+    type="text"
+    id="content"
+    name="content"
+    value={searchTerm}
+    onChange={handleChange}
+    className="border rounded-lg px-2 py-1 w-full"
+  />
+  <button type="submit" disabled={!searchTerm} hidden className="bg-blue-500 text-white px-4 py-2 rounded">
+    Search
+  </button>
+</form>
+
+{results.length > 0 && (
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
+    {results.map((result: { id: string; note: string }) => (
+      <div key={result.id} className="bg-yellow-200 rounded-lg h-[300] w-[300] p-4 shadow-md">
+        <p className="font-base text-lg">{result.note}</p>
+      </div>
+    ))}
+  </div>
+)}
+
+
     </div>
   );
 }

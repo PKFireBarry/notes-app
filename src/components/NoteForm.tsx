@@ -33,11 +33,13 @@ function NoteForm() {
 
 
   return (
-    <div>
+    <div
+      className=" bg-yellow-200 border-b-4 border-yellow-300 rounded-b-xl p-4"
+    >
           <form onSubmit={handleSubmit} className="mb-4">
       <div className="flex items-center mb-2">
-        <label htmlFor="content" className="mr-2">
-          Sticky Note:
+        <label htmlFor="content" className="mr-2 text-center">
+          New Sticky Note:
         </label>
       </div>
         <input
@@ -46,9 +48,9 @@ function NoteForm() {
           name="content"
           value={content}
           onChange={handleChange}
-          className="border rounded-lg px-2 py-1"
+          className="border rounded-lg px-2 py-1 w-full"
         />
-      <button type="submit" disabled={!content} className="bg-blue-500 text-white px-4 py-2 rounded">
+      <button type="submit" hidden disabled={!content} className="bg-blue-500 text-white px-4 mt-2 py-2 rounded">
         Save
       </button>
     </form>
