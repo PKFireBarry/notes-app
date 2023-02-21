@@ -36,7 +36,7 @@ function NoteForm() {
           <form onSubmit={handleSubmit} className="mb-4">
       <div className="flex items-center mb-2">
         <label htmlFor="content" className="mr-2">
-          Note:
+          Sticky Note:
         </label>
         <input
           type="text"
@@ -44,7 +44,7 @@ function NoteForm() {
           name="content"
           value={content}
           onChange={handleChange}
-          className="border rounded px-2 py-1"
+          className="border rounded-lg h-[200px] w-[200px] px-2 py-1"
         />
       </div>
       <button type="submit" disabled={!content} className="bg-blue-500 text-white px-4 py-2 rounded">
