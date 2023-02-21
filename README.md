@@ -17,7 +17,7 @@ This is a simple web app built with React and Tailwind CSS that allows users to 
 - To delete a note, click on the delete button located at the bottom of each note card.
 - To search for a note, type in a keyword or phrase in the search bar and press enter. The search will filter notes based on their content.
 ## Features
-- Notes can be created, updated, and deleted
+- Notes can be created, and deleted
 - Notes are saved in a Firebase database
 - Search functionality allows for easy retrieval of notes
 ## Technologies Used
